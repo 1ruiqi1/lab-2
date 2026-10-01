@@ -1,0 +1,149 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body{
+    background-color: #dceff2;
+}
+
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #173f35;
+    padding: 20px 0px;
+}
+
+
+.nav-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    gap: 15px;
+}
+
+
+.nav-links li a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.logo{
+    margin-bottom: 15px;
+    color: white;
+}
+
+
+.container{
+    margin: 0px auto;
+    max-width: 1000px;
+    padding: 20px;
+}
+
+
+.bio-hero{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    background-color: #cfe8ed;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.bio-hero h2{
+    color: #173f35;
+    margin-bottom: 10px;
+}
+
+
+.card-grid{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+
+.card{
+    flex-basis: 100%;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+}
+
+
+.card:hover{
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.card h2{
+    color: #173f35;
+    margin-bottom: 10px;
+}
+
+
+.card img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px 0px;
+}
+
+
+footer{
+    background-color: #173f35;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+@media(min-width: 768px){
+
+    .navbar{
+        flex-direction: row;
+        justify-content: space-between;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+
+    .logo{
+        flex-basis: 300px;
+        margin-bottom: 0px;
+    }
+
+
+    nav{
+        flex-grow: 1;
+    }
+
+
+    .nav-links{
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+
+    .card-grid{
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0px;
+    }
+
+
+    .card{
+        flex-basis: 30%;
+    }
+
+}
